@@ -1,3 +1,27 @@
+def half_pyramid
+    puts ("Salut, bienvenue dans ta super pyramide ! Combien d'étages veux-tu ?")
+    floor = gets.chomp.to_i
+    
+    puts ("Voici la pyramide :")
+    
+    for i in 1..floor
+        for j in 0..(floor - i)
+            print(" ")
+        end
+        for k in 1..i
+            print("#")
+        end
+        puts ""
+    end
+end
+
+half_pyramid
+
+def full_pyramid
+end
+
+
+
 puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 
 print ">"
